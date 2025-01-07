@@ -167,8 +167,9 @@ Read more about [`safe-ssr`](https://npmjs.com/safe-ssr)
 
 1. **Registration**: Users can register with email, password, and name
 2. **Login**: Users receive a JWT token stored in cookies
-3. **Session**: Token is verified on each request
-4. **Protected Routes**: Access control based on authentication state
+3. **Session**: Token is verified on each request and passed to the "user" database client.
+   - Also stores common user-specific data (name, email, etc) in the JWT token so that we don't need to query the database for it on each request
+4. **Protected Routes**: Access control based on authentication state via the `event.locals.user`
 
 ## API Endpoints
 
