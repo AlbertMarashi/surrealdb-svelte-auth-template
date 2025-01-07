@@ -21,8 +21,8 @@ A full-stack authentication boilerplate using SvelteKit and SurrealDB. This temp
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/surrealdb-auth-boilerplate.git
-cd surrealdb-auth-boilerplate
+git clone https://github.com/AlbertMarashi/surrealdb-svelte-auth-template.git
+cd surrealdb-svelte-auth-template
 ```
 
 2. Install dependencies:
