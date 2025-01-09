@@ -44,8 +44,6 @@ export async function init_surreal_client(
 
     const surreal_host = new URL(PUBLIC_SURREAL_HOST)
 
-    if (surreal_host.protocol === "http:") surreal_host.protocol = "ws:"
-    if (surreal_host.protocol === "https:") surreal_host.protocol = "wss:"
     surreal_host.pathname = "/rpc"
 
     await db.connect(surreal_host, {
